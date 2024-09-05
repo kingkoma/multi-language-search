@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Language Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="multi-language-search-popup">
+  <h3>Multi-Language Search</h3>
+  
+  <div class="form-group">
+    <label for="languages">Select Languages: </label>
+    <select id="languages" name="languages" multiple
+            title="Hold down the Ctrl (Windows) or Command (Mac) button to select multiple options">
+      <option value="en">English</option>
+      <option value="ja">Japanese</option>
+      <option value="zh-CN">Chinese (Simplified)</option>
+      <option value="zh-TW">Chinese (Traditional)</option>
+    </select>
+  </div>
+  
+  <div class="form-group">
+    <label for="countries">Select Countries:</label>
+    <select id="countries" name="countries">
+      <!-- Countries will be populated by JavaScript -->
+    </select>
+  </div>
+
+  <div class="button-group">
+    <button id="save">Save Options</button>
+    <button id="reSearch">Re-Search</button>
+    <button id="eraseOptions">Clear Options</button>
+    <button id="eraseStorage">Clear Storage</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
